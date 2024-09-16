@@ -1,6 +1,7 @@
+console.log("here")
 const mongoose = require("mongoose")
-mongoose.connect('mongodb+srv://vanshbhatnagar14dev:129212@cluster0.blv3ioj.mongodb.net/');
-console.log("db connect done");
+const log = mongoose.connect('mongodb+srv://vanshbhatnagar14dev:129212@cluster0.blv3ioj.mongodb.net/');
+console.log("db connect done" + log);
 const {Schema} = mongoose;
 const fetchSchema = new mongoose.Schema({
     name: {
@@ -35,7 +36,7 @@ const fetchSchema = new mongoose.Schema({
         trim: true
     },
     base_unit: {
-        type: Number,
+        type: String,
         required: true,
         unique: false,
         trim: true
