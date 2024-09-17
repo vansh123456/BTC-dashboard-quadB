@@ -7,7 +7,7 @@ export const Table = () => {
     useEffect(() => {
         const values = async () => {
             try {
-                const response  = await axios.get('http://localhost:3001/api/v1/display');
+                const response  = await axios.get('https://btc-dashboard-quadb.onrender.com/api/v1/display');
                 setData(response.data);
             }
             catch(err)
@@ -18,34 +18,6 @@ export const Table = () => {
         values();
     },[]);
     return (
-        // <div className="container mx-auto mt-8">
-        //   <table className="min-w-full bg-white border border-gray-300">
-        //     <thead>
-        //       <tr className="bg-gray-800 text-white">
-        //         <th className="py-2 px-4 border-b">Name</th>
-        //         <th className="py-2 px-4 border-b">Last</th>
-        //         <th className="py-2 px-4 border-b">Buy</th>
-        //         <th className="py-2 px-4 border-b">Sell</th>
-        //         <th className="py-2 px-4 border-b">Volume</th>
-        //         <th className="py-2 px-4 border-b">Base Unit</th>
-        //       </tr>
-        //     </thead>
-        //     <tbody>
-        //       {data.slice(0, 10).map((item, index) => (
-        //         <tr key={index} className="text-center">
-        //           <td className="py-2 px-4 border-b">{item.name}</td>
-        //           <td className="py-2 px-4 border-b">{item.last}</td>
-        //           <td className="py-2 px-4 border-b">{item.buy}</td>
-        //           <td className="py-2 px-4 border-b">{item.sell}</td>
-        //           <td className="py-2 px-4 border-b">{item.volume}</td>
-        //           <td className="py-2 px-4 border-b">{item.base_unit}</td>
-        //         </tr>
-        //       ))}
-        //     </tbody>
-        //   </table>
-        // </div>
-
-
 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
