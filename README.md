@@ -27,6 +27,6 @@ PLS WAIT FOR 1 MIN ATLEAST AFTER OPENING(as free tier backend server turn off du
     
 ## Screenshots
 
-![App Screenshot](https://imgur.com/a/mZcfPR1)
+![App Screenshot](https://github.com/vansh123456/BTC-dashboard-quadB/blob/b3ffbde4fadb4b9607f3e8caa135c4ceacc5327c/images/img.png)
 
 
